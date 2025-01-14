@@ -2,7 +2,7 @@ import { Order } from "@/core/order/order" // type
 import { OrderRepository } from "@/core/order/order.repo" // port
 
 // กำหนด interface สำหรับบริการที่เกี่ยวกับ Order
-export interface OrderService {
+interface OrderService {
   createOrder(order: Order): Promise<Order>
 }
 
